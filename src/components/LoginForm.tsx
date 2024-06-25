@@ -52,7 +52,7 @@ export default function LoginForm(){
     }
 
     return (
-        <form onSubmit={onSubmit} method="POST" className="form form--lg">
+        <form onSubmit={onSubmit} className="form form--lg">
             <h1 className="form__title">로그인</h1>
             <div className="form__block">
                 <label htmlFor="email">email</label>
