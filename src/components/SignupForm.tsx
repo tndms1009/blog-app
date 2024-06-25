@@ -11,7 +11,7 @@ export default function SignupForm(){
     const [passwordConfirm, setPasswordConfirm] = useState<string>("");
 
     const navgate = useNavigate();
-    
+
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
@@ -73,7 +73,7 @@ export default function SignupForm(){
         }
     }
     return (
-        <form onSubmit={onSubmit} method="POST" className="form form--lg">
+        <form onSubmit={onSubmit} className="form form--lg">
             <h1 className="form__title">회원가입</h1>
             <div className="form__block">
                 <label htmlFor="email">이메일</label>
